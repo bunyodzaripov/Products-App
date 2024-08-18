@@ -25,10 +25,10 @@ function displayProducts(products) {
    let pagination_products = products.slice(start_index, end_index);
 
    pagination_products.forEach((product) => {
-      let div = document.createElement("div");
-      div.classList.add("col-lg-4", "col-md-6", "col-sm-12", "p-3");
+      const div = document.createElement("div");
+      div.className = "col-lg-4 col-md-6 col-sm-12 p-3 ";
       div.innerHTML = `
-          <div class="card h-100">
+          <div class="card h-100 w-100 rounded shadow-sm">
             <img src="${
                product.image
             }" class="card-img-top p-3 w-100"  height="500px" alt="${
